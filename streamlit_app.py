@@ -2,6 +2,10 @@
 
 import streamlit as st
 
+st.write("DB username:", st.secrets["db_username"])
+st.write("DB password:", st.secrets["db_password"])
+st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
+
 # Initialize connection.
 conn = st.experimental_connection('mysql', type='sql')
 
