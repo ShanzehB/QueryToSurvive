@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-print(st.secrets)
+print("Secrets " + st.secrets)
 
 # st.write("DB username:", st.secrets["username"])
 # st.write("DB password:", st.secrets["password"])
