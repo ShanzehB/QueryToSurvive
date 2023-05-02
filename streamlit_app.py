@@ -3,7 +3,7 @@
 import streamlit as st
 
 # Initialize connection.
-conn = st.experimental_connection('mysql', type='sql')
+conn = st.experimental_connection('mysql')
 
 # Perform query.
 df = conn.query('SELECT * from mytable;', ttl=600)
